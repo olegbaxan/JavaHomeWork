@@ -43,5 +43,16 @@ public class Main {
 		bool2=x<100 & x++ > 0;
 
 		System.out.println("a(1.6); bool1 = "+ bool1 + " / bool2 = "+bool2);
+
+		/*
+		Outputs:
+		a=20
+		a(1.1)=83
+		a(1.2)=66
+		a(1.3)=114
+		a(1.4)=true
+		a(1.5); Character = z / Code = z / Decimal = z
+		a(1.6); bool1 = false / bool2 = false
+		*/
 	}
 }
