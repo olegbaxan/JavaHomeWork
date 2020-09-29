@@ -2,7 +2,7 @@ package com.step.model.appliance.vacuum;
 
 public class Vacuum {
     String brand;
-    String colour;
+    String color;
     String cleanType;
 
     public void switchOff(){

@@ -2,7 +2,7 @@ package com.step.model.things.candle;
 
 public class Candle {
     double price;
-    String colour;
+    String color;
 
     public void burn(){
         System.out.println("Candle in the wind");

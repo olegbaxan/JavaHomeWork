@@ -2,7 +2,7 @@ package com.step.model.animal.dog;
 
 public class Dog {
     String name="Azorica";
-    String colour;
+    String color;
     byte age;
     String bread;
 

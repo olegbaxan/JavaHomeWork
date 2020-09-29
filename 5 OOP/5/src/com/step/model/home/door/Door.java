@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Door {
     double weight;
     double height;
-    String colour;
+    String color;
 
     public void close(){
         System.out.println("Door is closed");

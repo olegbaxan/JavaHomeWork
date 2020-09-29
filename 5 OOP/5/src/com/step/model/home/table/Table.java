@@ -2,7 +2,7 @@ package com.step.model.home.table;
 
 public class Table {
     byte feet;
-    String colour;
+    String color;
     double lengthShort;
     double lengthLong;
     String type;

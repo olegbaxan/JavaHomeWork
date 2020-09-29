@@ -2,7 +2,7 @@ package com.step.model.animal.cat;
 
 public class Cat {
     String name;
-    String colour;
+    String color;
     byte age;
     String bread;
 

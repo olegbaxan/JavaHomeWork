@@ -3,7 +3,7 @@ package com.step.model.appliance.remote;
 import com.step.model.appliance.tv.TV;
 
 public class Remote {
-    String colour;
+    String color;
     String brand;
 
     public void show(int channel){

@@ -2,7 +2,7 @@ package com.step.model.clothes;
 
 public class Clothes {
     String typeOf;
-    String colour;
+    String color;
     String producedBy;
 
     public void buy(){

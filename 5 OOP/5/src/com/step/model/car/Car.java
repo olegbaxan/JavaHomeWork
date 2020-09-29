@@ -3,7 +3,7 @@ package com.step.model.car;
 public class Car {
     String brand;
     byte doors;
-    String colour;
+    String color;
 
     public void breaks(){
         System.out.println("Traffic Light. Breeeeaaaaaaak");
