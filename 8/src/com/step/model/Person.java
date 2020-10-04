@@ -8,8 +8,8 @@ public class Person {
     protected boolean maritalStatus;
     protected String workplace;
 
-    public void buy(String reteta){
-        System.out.println("I would like to buy "+ reteta);
+    public void buy(String produsul){
+        System.out.println("I would like to buy "+ produsul);
         pay(300);
     }
     public void pay(double suma ){
