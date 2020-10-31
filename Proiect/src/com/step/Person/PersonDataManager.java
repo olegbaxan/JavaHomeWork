@@ -1,6 +1,7 @@
 package com.step.Person;
 import com.step.Menu.Menu;
 import com.step.Person.Person;
+import java.time.LocalDate;
 
 import java.util.Scanner;
 import java.util.stream.IntStream;
@@ -16,7 +17,18 @@ public class PersonDataManager {
         String newValue;
         listPerson();
         System.out.println("Select ID of the person to modify");
-        int personToModify= Menu.getOption();
+        int personToModify=-1;
+        int option=0;
+        boolean isValid = false;
+        do {
+            try{
+                personToModify= Menu.getOption();
+                isValid = true;
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+                System.out.println("Please try again");
+            }
+        } while(!isValid);
 
         switch (attrToModify){
             case 1: newValue=enterText("Enter new value for Description"); per[personToModify].setDescription(newValue);break;
@@ -29,13 +41,24 @@ public class PersonDataManager {
     public static void delete(){
         listPerson();
         System.out.println("Select ID of the person to delete");
-        int personToDelete= Menu.getOption();
+        int personToDelete=-1;
+        int option=0;
+        boolean isValid = false;
+        do {
+            try{
+                personToDelete= Menu.getOption();
+                isValid = true;
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+                System.out.println("Please try again");
+            }
+        } while(!isValid);
 
         for (int i = personToDelete; i < per.length - 1; i++) {
             per[i] = per[i + 1];
         }
         personIndex--;
-        listPerson();
+        //listPerson();
     }
 
     public static String enterText(String message) {
@@ -51,7 +74,9 @@ public class PersonDataManager {
         String phone=enterText("Enter phone of the Person");
         String mobile=enterText("Enter mobile of the Person");
         String email=enterText("Enter email of the Person");
-        add(new Person(personName,surname,description,phone,mobile,email));
+        String idnp=enterText("Enter IDNP of the Person");
+        LocalDate today=LocalDate.now();
+        add(new Person(personName,surname,description,phone,mobile,email,idnp,today));
     }
 
     public static void listPerson(){

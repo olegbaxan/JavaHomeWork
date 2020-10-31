@@ -5,18 +5,18 @@ import com.step.Person.PersonDataManager;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int menuSelection;
         while(1==1){
-//            clearScreen();
-            //System.out.println("Enter in do");
-            try {
-                //System.out.println("System try");
+           int menuSelection=0;
+        boolean isValid = false;
+        do {
+            try{
                 menuSelection = Menu.operationMenu();
-
-            }catch (Exception ex){
-                throw new Exception("Enter a valid number");
+                isValid = true;
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+                System.out.println("Please try again");
             }
-            System.out.println("menuSelection="+menuSelection);
+            } while(!isValid);
             switch (menuSelection){
 
                 case 1:Menu.optionPerson();
@@ -47,9 +47,6 @@ public class App {
 
 
     }
-//    public static void clearScreen() {
-//        System.out.print("\033[H\033[2J");
-//        System.out.flush();
-//    }
+
 
 }

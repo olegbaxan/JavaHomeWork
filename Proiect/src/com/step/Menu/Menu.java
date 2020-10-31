@@ -1,6 +1,7 @@
 package com.step.Menu;
 
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Menu {
     static int level=1;
@@ -13,7 +14,17 @@ public class Menu {
             System.out.println("4. Manage Invoice");
             System.out.println("5. Manage Service Providers");
             System.out.println("6. Exit & Close");
-            int option=getOption();
+            int option=0;
+            boolean isValid = false;
+            do {
+                try{
+                    option=getOption();
+                    isValid = true;
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                    System.out.println("Please try again");
+                }
+            } while(!isValid);
 
             switch (option){
                 case 1: level=2; return 0;
@@ -26,13 +37,16 @@ public class Menu {
 
         return 0;
     }
-    public static int getOption(){
+    public static int getOption() throws Exception{
         Scanner sc = new Scanner(System.in);
+        try {
             int num = sc.nextInt();
-
             return num;
-
-
+        } catch (InputMismatchException ex) {
+            sc.nextLine();
+            System.out.println("Data is not a number");
+            throw new Exception();
+        }
     }
     public static int optionPerson(){
 
@@ -42,7 +56,17 @@ public class Menu {
         System.out.println("3. Delete Person");
         System.out.println("4. View Person");
         System.out.println("5. Exit & Close");
-        int option=getOption();
+        int option=0;
+        boolean isValid = false;
+        do {
+            try{
+                option=getOption();
+                isValid = true;
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+                System.out.println("Please try again");
+            }
+        } while(!isValid);
         switch (option){
             case 1:return 21;
             case 2:level=3; return 0;
@@ -60,7 +84,17 @@ public class Menu {
         System.out.println("3. Mobile");
         System.out.println("4. Email");
         System.out.println("5 Exit & Close");
-        int option=getOption();
+        int option=0;
+        boolean isValid = false;
+        do {
+            try{
+                option=getOption();
+                isValid = true;
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+                System.out.println("Please try again");
+            }
+        } while(!isValid);
         switch (option){
             case 1:return 31;
             case 2:return 32;
@@ -80,6 +114,6 @@ public class Menu {
             default:System.out.println("Level = "+level);return 1;
 
         }
-        //return 0;
+
     }
 }

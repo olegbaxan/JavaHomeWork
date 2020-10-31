@@ -1,5 +1,8 @@
 package com.step.Person;
 
+import java.util.Locale;
+import java.time.LocalDate;
+
 public class Person {
     private int personId;
     private String name;
@@ -8,21 +11,37 @@ public class Person {
     private String phone;
     private String mobile;
     private String email;
+    private LocalDate regDate;
+    private String idnp;
 
-    public Person(String name,String surname,String description,String phone,String mobile,String email){
+    public Person(String name,String surname,String description,String phone,String mobile,String email,String idnp,LocalDate today){
         this.name = name;
         this.surname = surname;
         this.description = description;
         this.phone = phone;
         this.mobile = mobile;
         this.email = email;
+        this.regDate=today;
+        this.idnp=idnp;
     }
+
     public void sendMeterInfo(){
 
+    }
+    public void setIdnp(String idnp) {
+        this.idnp = idnp;
     }
 
     public String getName() {
         return name;
+    }
+
+    public LocalDate getRegDate() {
+        return regDate;
+    }
+
+    public String getIdnp() {
+        return idnp;
     }
 
     public String getSurname() {
