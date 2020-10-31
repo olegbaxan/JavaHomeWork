@@ -9,11 +9,43 @@ public class Person {
     private String mobile;
     private String email;
 
+    public Person(String name,String surname,String description,String phone,String mobile,String email){
+        this.name = name;
+        this.surname = surname;
+        this.description = description;
+        this.phone = phone;
+        this.mobile = mobile;
+        this.email = email;
+    }
     public void sendMeterInfo(){
 
     }
 
-    public void setName(String name) {
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+        public void setName(String name) {
         this.name = name;
     }
 
