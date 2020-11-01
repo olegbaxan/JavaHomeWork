@@ -74,21 +74,41 @@ public class PersonDataManager {
         String phone=enterText("Enter phone of the Person");
         String mobile=enterText("Enter mobile of the Person");
         String email=enterText("Enter email of the Person");
-        String idnp=enterText("Enter IDNP of the Person");
+        String idnp;
+        boolean exist;
+        do {
+            exist=false;
+            idnp=enterText("Enter IDNP of the Person");
+            if(checkIDNP(idnp)==true){
+                exist=true;
+                System.out.println("Person with this IDNP already exist!");
+            }
+        }while(exist);
+
+
         LocalDate today=LocalDate.now();
         add(new Person(personName,surname,description,phone,mobile,email,idnp,today));
     }
 
     public static void listPerson(){
-    System.out.println("-------------------------------------------------------------------------------------------------------------");
-    System.out.printf ("%3s %15s %15s %10s %10s %30s %20s", "ID","NAME ","SURNAME", "PHONE", "MOBILE", "EMAIL ID", "DESCRIPTION");
+    System.out.println("---------------------------------------------------------------------------------------------------------------------------");
+    System.out.printf ("%3s %15s %15s %10s %10s %30s %20s %13s", "ID","NAME ","SURNAME", "PHONE", "MOBILE", "EMAIL ID", "DESCRIPTION","IDNP");
     System.out.println();
-    System.out.println("-------------------------------------------------------------------------------------------------------------");
+    System.out.println("---------------------------------------------------------------------------------------------------------------------------");
     for(int i=0;i<personIndex;i++){
-        System.out.format("%3d %15s %15s %10s %10s %30s %20s",
-               i,per[i].getName(), per[i].getSurname(), per[i].getPhone(), per[i].getMobile(), per[i].getEmail(),per[i].getDescription());
+        System.out.format("%3d %15s %15s %10s %10s %30s %20s %13s",
+               i,per[i].getName(), per[i].getSurname(), per[i].getPhone(), per[i].getMobile(), per[i].getEmail(),per[i].getDescription(),per[i].getIdnp());
     System.out.println();
     }
-    System.out.println("-------------------------------------------------------------------------------------------------------------");
+    System.out.println("---------------------------------------------------------------------------------------------------------------------------");
+    }
+    public static boolean checkIDNP(String idnp){
+        boolean found=false;
+        for(int i=0;i<personIndex;i++){
+            if(per[i].getIdnp().equals(idnp)){
+                found=true;
+            }
+        }
+        return found;
     }
 }
