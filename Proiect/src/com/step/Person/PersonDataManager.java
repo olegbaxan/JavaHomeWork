@@ -3,12 +3,13 @@ import com.step.Menu.Menu;
 import com.step.Person.Person;
 import java.time.LocalDate;
 
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.IntStream;
 
 public class PersonDataManager {
     public static int personIndex;
-    private static Person []per = new Person[100];
+    public static boolean searched=false;
+    private static Person [] per = new Person[100];
     private static void add(Person person){
         per[personIndex]=person;
         personIndex++;
@@ -100,6 +101,7 @@ public class PersonDataManager {
                i,per[i].getName(), per[i].getSurname(), per[i].getPhone(), per[i].getMobile(), per[i].getEmail(),per[i].getDescription(),per[i].getIdnp());
     System.out.println();
     }
+
     System.out.println("---------------------------------------------------------------------------------------------------------------------------");
     }
     public static boolean checkIDNP(String idnp){
@@ -110,5 +112,87 @@ public class PersonDataManager {
             }
         }
         return found;
+    }
+    public static void search(int attrToSearch){
+        String valueToSearch;
+        switch (attrToSearch){
+            case 1: valueToSearch=enterText("Enter new value for IDNP to search"); searchByIdnp(valueToSearch) ;break;
+            case 2: valueToSearch=enterText("Enter new value for Surname to search");searchBySurname(valueToSearch);break;
+            case 3: valueToSearch=enterText("Enter new value for Phone to search");searchByPhone(valueToSearch);break;
+            case 4: valueToSearch=enterText("Enter new value for Mobil to search");searchByMobil(valueToSearch);break;
+        }
+        if(searched==false){
+            System.out.println("!!! Searched value was not found");
+        }else searched=false;
+
+    }
+
+    public static void searchByIdnp(String idnp){
+        Map<String, List<Person>> personByIdnp= new HashMap<>();
+        for(int i=0;i<personIndex;i++){
+            if(!personByIdnp.containsKey(per[i].getIdnp())){
+                personByIdnp.put(per[i].getIdnp(),new ArrayList<>());
+            }
+            personByIdnp.get(per[i].getIdnp()).add(per[i]);
+        }
+        for(Map.Entry<String,List<Person>> infoIdnp:personByIdnp.entrySet()){
+            if(infoIdnp.getKey().matches(".*"+idnp+".*")) {
+                System.out.print("IDNP: " + infoIdnp.getKey());
+                System.out.print(" => Value: " + infoIdnp.getValue());
+                System.out.println();
+                searched=true;
+            }
+        }
+    }
+    public static void searchBySurname(String surname){
+        Map<String, List<Person>> personBySurname= new HashMap<>();
+        for(int i=0;i<personIndex;i++){
+            if(!personBySurname.containsKey(per[i].getSurname())){
+                personBySurname.put(per[i].getSurname(),new ArrayList<>());
+            }
+            personBySurname.get(per[i].getSurname()).add(per[i]);
+        }
+        for(Map.Entry<String,List<Person>> infoSurname:personBySurname.entrySet()){
+            if(infoSurname.getKey().matches(".*"+surname+".*")) {
+                System.out.print("Surname: " + infoSurname.getKey());
+                System.out.print(" => Value: " + infoSurname.getValue());
+                System.out.println();
+                searched=true;
+            }
+        }
+    }
+    public static void searchByPhone(String phone){
+        Map<String, List<Person>> personByPhone= new HashMap<>();
+        for(int i=0;i<personIndex;i++){
+            if(!personByPhone.containsKey(per[i].getPhone())){
+                personByPhone.put(per[i].getPhone(),new ArrayList<>());
+            }
+            personByPhone.get(per[i].getPhone()).add(per[i]);
+        }
+        for(Map.Entry<String,List<Person>> infoPhone:personByPhone.entrySet()){
+            if(infoPhone.getKey().matches(".*"+phone+".*")) {
+                System.out.print("Phone: " + infoPhone.getKey());
+                System.out.print(" => Value: " + infoPhone.getValue());
+                System.out.println();
+                searched=true;
+            }
+        }
+    }
+    public static void searchByMobil(String mobil){
+        Map<String, List<Person>> personByMobil= new HashMap<>();
+        for(int i=0;i<personIndex;i++){
+            if(!personByMobil.containsKey(per[i].getMobile())){
+                personByMobil.put(per[i].getMobile(),new ArrayList<>());
+            }
+            personByMobil.get(per[i].getMobile()).add(per[i]);
+        }
+        for(Map.Entry<String,List<Person>> infoMobil:personByMobil.entrySet()){
+            if(infoMobil.getKey().matches(".*"+mobil+".*")) {
+                System.out.print("Mobil phone: " + infoMobil.getKey());
+                System.out.print(" => Value: " + infoMobil.getValue());
+                System.out.println();
+                searched=true;
+            }
+        }
     }
 }

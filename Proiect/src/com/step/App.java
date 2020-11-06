@@ -35,6 +35,11 @@ public class App {
                 case 32: PersonDataManager.modify(2);break;
                 case 33: PersonDataManager.modify(3);break;
                 case 34: PersonDataManager.modify(4);break;
+
+                case 41: PersonDataManager.search(1);break;
+                case 42: PersonDataManager.search(2);break;
+                case 43: PersonDataManager.search(3);break;
+                case 44: PersonDataManager.search(4);break;
                 case 4: break;
                 case 5: break;
                 case 7777: System.exit(0);

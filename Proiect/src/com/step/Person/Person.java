@@ -87,4 +87,8 @@ public class Person {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String toString(){
+        return String.format("Person (name=%s, surname=%s, phone=%s, mobil=%s, email=%s, idnp=%s, description=%s, regdate=%s)",name,surname,phone,mobile,email,idnp,description,regDate);
+    }
 }

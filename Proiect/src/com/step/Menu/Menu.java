@@ -55,7 +55,8 @@ public class Menu {
         System.out.println("2. Modify Person");
         System.out.println("3. Delete Person");
         System.out.println("4. View Person");
-        System.out.println("5. Exit & Close");
+        System.out.println("5. Search Person");
+        System.out.println("6. Exit & Close");
         int option=0;
         boolean isValid = false;
         do {
@@ -72,7 +73,8 @@ public class Menu {
             case 2:level=3; return 0;
             case 3:return 23;
             case 4:return 24;
-            case 5:level =1 ;return 0;
+            case 5:level =4 ;return 0;
+            case 6:level =1 ;return 0;
         }
         return 0;
     }
@@ -104,12 +106,40 @@ public class Menu {
 
         }
     }
+    public static int searchPersonBy(){
+
+        System.out.println("===Search By===");
+        System.out.println("1. IDNP");
+        System.out.println("2. Surname");
+        System.out.println("3. Phone");
+        System.out.println("4. Mobil");
+        System.out.println("5 Exit & Close");
+        int option=0;
+        boolean isValid = false;
+        do {
+            try{
+                option=getOption();
+                isValid = true;
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+                System.out.println("Please try again");
+            }
+        } while(!isValid);
+        switch (option){
+            case 1:return 41;
+            case 2:return 42;
+            case 3:return 43;
+            case 4:return 44;
+            default:level=2;return 0;
+
+        }
+    }
     public static int operationMenu() {
         switch (level){
             case 1: System.out.println("Level = "+level);return optionSelect();
             case 2: System.out.println("Level = "+level);return optionPerson();
             case 3: System.out.println("Level = "+level);return modifyPerson();
-
+            case 4: System.out.println("Level = "+level);return searchPersonBy();
 
             default:System.out.println("Level = "+level);return 1;
 
