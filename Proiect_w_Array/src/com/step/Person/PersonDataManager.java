@@ -9,9 +9,9 @@ import java.util.stream.IntStream;
 public class PersonDataManager {
     public static int personIndex;
     public static boolean searched=false;
-    private static List<Person> per = new ArrayList<>();
+    private static Person [] per = new Person[100];
     private static void add(Person person){
-        per.add(person);
+        per[personIndex]=person;
         personIndex++;
     }
     public static void modify(int attrToModify){
@@ -32,10 +32,10 @@ public class PersonDataManager {
         } while(!isValid);
 
         switch (attrToModify){
-            case 1: newValue=enterText("Enter new value for Description"); per.get(personToModify).setDescription(newValue);break;
-            case 2: newValue=enterText("Enter new value for Phone");per.get(personToModify).setPhone(newValue);break;
-            case 3: newValue=enterText("Enter new value for Mobile");per.get(personToModify).setMobile(newValue);break;
-            case 4: newValue=enterText("Enter new value for Email");per.get(personToModify).setEmail(newValue);break;
+            case 1: newValue=enterText("Enter new value for Description"); per[personToModify].setDescription(newValue);break;
+            case 2: newValue=enterText("Enter new value for Phone");per[personToModify].setPhone(newValue);break;
+            case 3: newValue=enterText("Enter new value for Mobile");per[personToModify].setMobile(newValue);break;
+            case 4: newValue=enterText("Enter new value for Email");per[personToModify].setEmail(newValue);break;
         }
     }
 
@@ -55,7 +55,9 @@ public class PersonDataManager {
             }
         } while(!isValid);
 
-        per.remove(personToDelete);
+        for (int i = personToDelete; i < per.length - 1; i++) {
+            per[i] = per[i + 1];
+        }
         personIndex--;
         //listPerson();
     }
@@ -90,15 +92,13 @@ public class PersonDataManager {
     }
 
     public static void listPerson(){
-        int i=0;
-        System.out.println("---------------------------------------------------------------------------------------------------------------------------");
+    System.out.println("---------------------------------------------------------------------------------------------------------------------------");
     System.out.printf ("%3s %15s %15s %10s %10s %30s %20s %13s", "ID","NAME ","SURNAME", "PHONE", "MOBILE", "EMAIL ID", "DESCRIPTION","IDNP");
     System.out.println();
     System.out.println("---------------------------------------------------------------------------------------------------------------------------");
-    for(Person person: per){
+    for(int i=0;i<personIndex;i++){
         System.out.format("%3d %15s %15s %10s %10s %30s %20s %13s",
-               i,person.getName(), person.getSurname(), person.getPhone(), person.getMobile(), person.getEmail(),person.getDescription(),person.getIdnp());
-        i++;
+               i,per[i].getName(), per[i].getSurname(), per[i].getPhone(), per[i].getMobile(), per[i].getEmail(),per[i].getDescription(),per[i].getIdnp());
     System.out.println();
     }
 
@@ -107,7 +107,7 @@ public class PersonDataManager {
     public static boolean checkIDNP(String idnp){
         boolean found=false;
         for(int i=0;i<personIndex;i++){
-            if(per.get(i).getIdnp().equals(idnp)){
+            if(per[i].getIdnp().equals(idnp)){
                 found=true;
             }
         }
@@ -130,10 +130,10 @@ public class PersonDataManager {
     public static void searchByIdnp(String idnp){
         Map<String, List<Person>> personByIdnp= new HashMap<>();
         for(int i=0;i<personIndex;i++){
-            if(!personByIdnp.containsKey(per.get(i).getIdnp())){
-                personByIdnp.put(per.get(i).getIdnp(),new ArrayList<>());
+            if(!personByIdnp.containsKey(per[i].getIdnp())){
+                personByIdnp.put(per[i].getIdnp(),new ArrayList<>());
             }
-            personByIdnp.get(per.get(i).getIdnp()).add(per.get(i));
+            personByIdnp.get(per[i].getIdnp()).add(per[i]);
         }
         for(Map.Entry<String,List<Person>> infoIdnp:personByIdnp.entrySet()){
             if(infoIdnp.getKey().matches(".*"+idnp+".*")) {
@@ -147,10 +147,10 @@ public class PersonDataManager {
     public static void searchBySurname(String surname){
         Map<String, List<Person>> personBySurname= new HashMap<>();
         for(int i=0;i<personIndex;i++){
-            if(!personBySurname.containsKey(per.get(i).getSurname())){
-                personBySurname.put(per.get(i).getSurname(),new ArrayList<>());
+            if(!personBySurname.containsKey(per[i].getSurname())){
+                personBySurname.put(per[i].getSurname(),new ArrayList<>());
             }
-            personBySurname.get(per.get(i).getSurname()).add(per.get(i));
+            personBySurname.get(per[i].getSurname()).add(per[i]);
         }
         for(Map.Entry<String,List<Person>> infoSurname:personBySurname.entrySet()){
             if(infoSurname.getKey().matches(".*"+surname+".*")) {
@@ -164,10 +164,10 @@ public class PersonDataManager {
     public static void searchByPhone(String phone){
         Map<String, List<Person>> personByPhone= new HashMap<>();
         for(int i=0;i<personIndex;i++){
-            if(!personByPhone.containsKey(per.get(i).getPhone())){
-                personByPhone.put(per.get(i).getPhone(),new ArrayList<>());
+            if(!personByPhone.containsKey(per[i].getPhone())){
+                personByPhone.put(per[i].getPhone(),new ArrayList<>());
             }
-            personByPhone.get(per.get(i).getPhone()).add(per.get(i));
+            personByPhone.get(per[i].getPhone()).add(per[i]);
         }
         for(Map.Entry<String,List<Person>> infoPhone:personByPhone.entrySet()){
             if(infoPhone.getKey().matches(".*"+phone+".*")) {
@@ -181,10 +181,10 @@ public class PersonDataManager {
     public static void searchByMobil(String mobil){
         Map<String, List<Person>> personByMobil= new HashMap<>();
         for(int i=0;i<personIndex;i++){
-            if(!personByMobil.containsKey(per.get(i).getMobile())){
-                personByMobil.put(per.get(i).getMobile(),new ArrayList<>());
+            if(!personByMobil.containsKey(per[i].getMobile())){
+                personByMobil.put(per[i].getMobile(),new ArrayList<>());
             }
-            personByMobil.get(per.get(i).getMobile()).add(per.get(i));
+            personByMobil.get(per[i].getMobile()).add(per[i]);
         }
         for(Map.Entry<String,List<Person>> infoMobil:personByMobil.entrySet()){
             if(infoMobil.getKey().matches(".*"+mobil+".*")) {
