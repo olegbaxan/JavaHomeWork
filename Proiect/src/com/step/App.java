@@ -1,57 +1,95 @@
 package com.step;
 
-import com.step.Menu.Menu;
-import com.step.Person.PersonDataManager;
+import com.step.menu.Menu;
+import com.step.menu.MenuOption;
+import com.step.person.PersonDataManager;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        while(1==1){
-           int menuSelection=0;
-        boolean isValid = false;
-        do {
-            try{
-                menuSelection = Menu.operationMenu();
-                isValid = true;
-            } catch (Exception ex) {
-                System.out.println(ex.getMessage());
-                System.out.println("Please try again");
+    public static void main(String[] args){
+        MenuOption menuSelection= MenuOption.MAIN_MENU;
+
+        while (true) {
+            switch (menuSelection) {
+                case MAIN_MENU: {
+                    menuSelection =Menu.optionSelect();
+                    break;
+                }
+                case PERSON_MENU: {
+                    menuSelection =Menu.optionPerson();
+                    break;
+                }
+//              case FLAT_MENU:
+//              case METER_MENU:
+//              case INVOICE_MENU:
+//              case SERVICE_PROVIDERS_MENU:
+                case SEARCH_PERSON_BY_IDNP: {
+                    PersonDataManager.search(1);
+                    menuSelection = MenuOption.SEARCH_PERSON;
+                    break;
+                }
+                case SEARCH_PERSON_BY_SURNAME: {
+                    PersonDataManager.search(2);
+                    menuSelection = MenuOption.SEARCH_PERSON;
+                    break;
+                }
+                case SEARCH_PERSON_BY_PHONE: {
+                    PersonDataManager.search(3);
+                    menuSelection = MenuOption.SEARCH_PERSON;
+                    break;
+                }
+                case SEARCH_PERSON_BY_MOBIL: {
+                    PersonDataManager.search(4);
+                    menuSelection = MenuOption.SEARCH_PERSON;
+                    break;
+                }
+                case ADD_PERSON: {
+                    PersonDataManager.collectPersonInfo();
+                    menuSelection = MenuOption.PERSON_MENU;
+                    break;
+                }
+                case MODIFY_PERSON: {
+                    menuSelection = Menu.modifyPerson();
+                    break;
+                }
+                case DELETE_PERSON: {
+                    PersonDataManager.delete();
+                    menuSelection = MenuOption.PERSON_MENU;
+                    break;
+                }
+                case VIEW_PERSON: {
+                    PersonDataManager.listPerson();
+                    menuSelection = MenuOption.PERSON_MENU;
+                    break;
+                }
+                case SEARCH_PERSON: {
+                    menuSelection = Menu.searchPersonBy();
+                    break;
+                }
+                case MODIFY_PERSON_DESC: {
+                    PersonDataManager.modify(1);
+                    menuSelection = MenuOption.PERSON_MENU;
+                    break;
+                }
+                case MODIFY_PERSON_PHONE: {
+                    PersonDataManager.modify(2);
+                    menuSelection = MenuOption.PERSON_MENU;
+                    break;
+                }
+                case MODIFY_PERSON_MOBIL: {
+                    PersonDataManager.modify(3);
+                    menuSelection = MenuOption.PERSON_MENU;
+                    break;
+                }
+                case MODIFY_PERSON_EMAIL: {
+                    PersonDataManager.modify(4);
+                    menuSelection = MenuOption.PERSON_MENU;
+                    break;
+                }
+                case EXIT: {
+                    System.exit(0);
+                }
+
             }
-            } while(!isValid);
-            switch (menuSelection){
-
-                case 1:Menu.optionPerson();
-
-                case 12: break;
-                case 13: break;
-                case 14: break;
-                case 15: break;
-
-                case 21: System.out.println("Enter in PersonData Manager");PersonDataManager.collectPersonInfo();break;
-                case 22: break;
-                case 23: PersonDataManager.delete(); break;
-                case 24: PersonDataManager.listPerson();break;
-
-                case 31: PersonDataManager.modify(1);break;
-                case 32: PersonDataManager.modify(2);break;
-                case 33: PersonDataManager.modify(3);break;
-                case 34: PersonDataManager.modify(4);break;
-
-                case 41: PersonDataManager.search(1);break;
-                case 42: PersonDataManager.search(2);break;
-                case 43: PersonDataManager.search(3);break;
-                case 44: PersonDataManager.search(4);break;
-                case 4: break;
-                case 5: break;
-                case 7777: System.exit(0);
-
-            }
-
-
-
         }
-
-
     }
-
-
 }

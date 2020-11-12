@@ -1,6 +1,5 @@
-package com.step.Person;
+package com.step.person;
 
-import java.util.Locale;
 import java.time.LocalDate;
 
 public class Person {
@@ -11,23 +10,24 @@ public class Person {
     private String phone;
     private String mobile;
     private String email;
-    private LocalDate regDate;
+    private final LocalDate regDate;
     private String idnp;
 
-    public Person(String name,String surname,String description,String phone,String mobile,String email,String idnp,LocalDate today){
+    public Person(String name, String surname, String description, String phone, String mobile, String email, String idnp, LocalDate today) {
         this.name = name;
         this.surname = surname;
         this.description = description;
         this.phone = phone;
         this.mobile = mobile;
         this.email = email;
-        this.regDate=today;
-        this.idnp=idnp;
+        this.regDate = today;
+        this.idnp = idnp;
     }
 
-    public void sendMeterInfo(){
+    public void sendMeterInfo() {
 
     }
+
     public void setIdnp(String idnp) {
         this.idnp = idnp;
     }
@@ -64,7 +64,7 @@ public class Person {
         return email;
     }
 
-        public void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -88,7 +88,7 @@ public class Person {
         this.email = email;
     }
 
-    public String toString(){
-        return String.format("Person (name=%s, surname=%s, phone=%s, mobil=%s, email=%s, idnp=%s, description=%s, regdate=%s)",name,surname,phone,mobile,email,idnp,description,regDate);
+    public String toString() {
+        return String.format("Person (name=%s, surname=%s, phone=%s, mobil=%s, email=%s, idnp=%s, description=%s, regdate=%s)", name, surname, phone, mobile, email, idnp, description, regDate);
     }
 }
