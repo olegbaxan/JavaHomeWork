@@ -9,7 +9,7 @@ import java.util.*;
 public class PersonDataManager {
     public static int personIndex;
     public static boolean searched = false;
-    private static List<Person> per = new ArrayList<>();
+    public static List<Person> per = new ArrayList<>();
 
     private static void add(Person person) {
         per.add(person);

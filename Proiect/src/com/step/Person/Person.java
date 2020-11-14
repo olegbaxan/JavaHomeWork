@@ -90,5 +90,6 @@ public class Person {
 
     public String toString() {
         return String.format("Person (name=%s, surname=%s, phone=%s, mobil=%s, email=%s, idnp=%s, description=%s, regdate=%s)", name, surname, phone, mobile, email, idnp, description, regDate);
+//        return String.format("%s,%s,%s,%s,%s,%s,%s,%s", name, surname, phone, mobile, email, idnp, description, regDate);
     }
 }

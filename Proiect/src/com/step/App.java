@@ -3,9 +3,12 @@ package com.step;
 import com.step.menu.Menu;
 import com.step.menu.MenuOption;
 import com.step.person.PersonDataManager;
+import com.step.read.ReadFromFile;
+import com.step.write.WriteDataToFile;
 
 public class App {
     public static void main(String[] args){
+        ReadFromFile.readPersonFromFile();
         MenuOption menuSelection= MenuOption.MAIN_MENU;
 
         while (true) {
@@ -86,6 +89,7 @@ public class App {
                     break;
                 }
                 case EXIT: {
+                    WriteDataToFile.savePersonDataToFile();
                     System.exit(0);
                 }
 
