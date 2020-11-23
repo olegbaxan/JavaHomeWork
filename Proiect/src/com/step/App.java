@@ -3,12 +3,15 @@ package com.step;
 import com.step.menu.Menu;
 import com.step.menu.MenuOption;
 import com.step.person.PersonDataManager;
-import com.step.read.ReadFromFile;
-import com.step.write.WriteDataToFile;
+import com.step.read.ReadObjectPersonData;
+import com.step.read.ReadPersonDataFromFile;
+import com.step.write.WriteObjectPersonData;
+import com.step.write.WritePersonDataToFile;
 
 public class App {
     public static void main(String[] args){
-        ReadFromFile.readPersonFromFile();
+//        ReadPersonDataFromFile.readPersonFromFile();
+        ReadObjectPersonData.ReadObjectPersonFromFile();
         MenuOption menuSelection= MenuOption.MAIN_MENU;
 
         while (true) {
@@ -68,6 +71,11 @@ public class App {
                     menuSelection = Menu.searchPersonBy();
                     break;
                 }
+                case SAVE_PERSON_TO_CSV: {
+                    WritePersonDataToFile.savePersonDataToFile();
+                    menuSelection = MenuOption.PERSON_MENU;
+                    break;
+                }
                 case MODIFY_PERSON_DESC: {
                     PersonDataManager.modify(1);
                     menuSelection = MenuOption.PERSON_MENU;
@@ -89,7 +97,7 @@ public class App {
                     break;
                 }
                 case EXIT: {
-                    WriteDataToFile.savePersonDataToFile();
+                    WriteObjectPersonData.WriteObjectPersonDataToFile();
                     System.exit(0);
                 }
 

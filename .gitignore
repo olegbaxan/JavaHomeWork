@@ -4,3 +4,6 @@
 #Doc file
 *.doc
 *.docx
+
+#CSV file
+*.csv

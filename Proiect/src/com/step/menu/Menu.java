@@ -64,7 +64,8 @@ public class Menu {
         System.out.println("3. Delete Person");
         System.out.println("4. View Person");
         System.out.println("5. Search Person");
-        System.out.println("6. Exit & Close");
+        System.out.println("6. Save Person Data to CSV");
+        System.out.println("7. Exit & Close");
         int option = 0;
         boolean isValid = false;
         do {
@@ -88,6 +89,8 @@ public class Menu {
             case 5:
                 return MenuOption.SEARCH_PERSON;
             case 6:
+                return MenuOption.SAVE_PERSON_TO_CSV;
+            case 7:
                 return MenuOption.MAIN_MENU;
             default:return MenuOption.PERSON_MENU;
         }

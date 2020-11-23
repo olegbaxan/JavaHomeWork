@@ -3,6 +3,7 @@ package com.step.read;
 import com.step.person.Person;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -10,7 +11,7 @@ import java.time.LocalDate;
 import static com.step.person.PersonDataManager.per;
 import static com.step.person.PersonDataManager.personIndex;
 
-public class ReadFromFile {
+public class ReadPersonDataFromFile {
     //Delimiter used in CSV file
     private static final String delimiter = ",";
 
@@ -18,7 +19,8 @@ public class ReadFromFile {
         try {
             String line = "";
 
-            BufferedReader readPerson = new BufferedReader(new FileReader("E:\\Dropbox\\STEP_IT\\HomeWork\\Java\\Proiect\\person.csv"));
+//            BufferedReader readPerson = new BufferedReader(new FileReader("E:\\Dropbox\\STEP_IT\\HomeWork\\Java\\Proiect\\person.csv"));
+            BufferedReader readPerson = new BufferedReader(new FileReader("person.csv")); //fisierul se afla in mapa out, unde gasim si App.class
 
             //Read the CSV file header
             readPerson.readLine();
@@ -35,6 +37,10 @@ public class ReadFromFile {
                 }
             }
             readPerson.close();
+        }
+        catch (FileNotFoundException ex){
+            System.out.println("Error in read CsvFile !!!");
+            ex.printStackTrace();
         }
         catch (IOException e) {
             System.out.println("Error in CsvFileReader !!!");

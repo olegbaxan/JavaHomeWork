@@ -1,8 +1,10 @@
 package com.step.person;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Person {
+public class Person implements Serializable {
+    public static final long serialVersionUID = 1;
     private int personId;
     private String name;
     private String surname;
