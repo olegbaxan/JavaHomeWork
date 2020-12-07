@@ -44,7 +44,7 @@ public class App {
                     person = personManager.read(person);
                     enter=true;
 //                person = ReadObjectPersonData.ReadObjectPersonFromFile();
-                    //ReadPersonDataFromFile.readPersonFromFile();
+//                    ReadPersonDataFromFile.readPersonFromFile();
                     break;
                 }
                 case 3: {
