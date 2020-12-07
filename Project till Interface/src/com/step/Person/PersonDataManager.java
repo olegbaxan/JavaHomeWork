@@ -124,7 +124,6 @@ public class PersonDataManager {
         for (int i = 0; i < personIndex; i++) {
             if (per.get(i).getIdnp().equals(idnp)) {
                 found = true;
-                break;
             }
         }
         return found;
@@ -150,7 +149,7 @@ public class PersonDataManager {
                 searchByMobil(valueToSearch);
                 break;
         }
-        if (!searched) {
+        if (searched == false) {
             System.out.println("!!! Searched value was not found");
         } else searched = false;
 

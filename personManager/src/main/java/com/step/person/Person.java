@@ -25,6 +25,17 @@ public class Person implements Serializable {
         this.regDate = today;
         this.idnp = idnp;
     }
+    public Person(int personId, String name, String surname, String description, String phone, String mobile, String email, String idnp, LocalDate today) {
+        this.personId=personId;
+        this.name = name;
+        this.surname = surname;
+        this.description = description;
+        this.phone = phone;
+        this.mobile = mobile;
+        this.email = email;
+        this.regDate = today;
+        this.idnp = idnp;
+    }
     public Person(Person person) {
         this.name = person.name;
         this.surname = person.surname;
@@ -40,6 +51,10 @@ public class Person implements Serializable {
 
     public void sendMeterInfo() {
 
+    }
+
+    public int getPersonId() {
+        return personId;
     }
 
     public void setIdnp(String idnp) {

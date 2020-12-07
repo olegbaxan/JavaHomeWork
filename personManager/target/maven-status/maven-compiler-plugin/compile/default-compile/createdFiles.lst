@@ -1,0 +1,15 @@
+com\step\manager\PersonManagerInFile.class
+com\step\menu\MenuOption.class
+com\step\person\Person.class
+com\step\App$1.class
+com\step\read\ReadPersonDataFromFile.class
+com\step\App.class
+com\step\write\WritePersonDataToFile.class
+com\step\manager\PersonManagerInMemory.class
+com\step\person\PersonDataManager.class
+com\step\menu\Menu.class
+com\step\manager\IPersonManager.class
+com\step\write\WriteObjectPersonData.class
+com\step\exception\NumberNotValidException.class
+com\step\manager\PersonManagerDB.class
+com\step\read\ReadObjectPersonData.class

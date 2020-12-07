@@ -6,10 +6,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import static com.step.App.*;
 import static com.step.manager.PersonManagerInFile.personIndex;
 
 public class ReadObjectPersonData {
@@ -17,7 +15,8 @@ public class ReadObjectPersonData {
         List<Person> arrList = new ArrayList<>();
         personIndex = 0;
         try {
-            ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("person.dat"));
+//            FileInputStream inputStream = getClass().getClassLoader().getResourceAsStream("person.dat");
+            ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("E:\\Dropbox\\STEP_IT\\HomeWork\\Java\\personManager\\src\\main\\java\\person.dat"));
             try {
                 while (true) {
 
@@ -37,7 +36,7 @@ public class ReadObjectPersonData {
             }
 
         } catch (Exception ex) {
-            System.out.println("No  person.dat found. Skipping importing the data");
+            System.out.println("No  person.dat found. Skipping importing the data"+ex);
 
         }
         return arrList;

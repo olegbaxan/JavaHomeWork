@@ -3,7 +3,6 @@ package com.step.person;
 import com.step.menu.Menu;
 
 import java.time.LocalDate;
-
 import java.util.*;
 
 public class PersonDataManager {

@@ -25,18 +25,6 @@ public class Person implements Serializable {
         this.regDate = today;
         this.idnp = idnp;
     }
-    public Person(Person person) {
-        this.name = person.name;
-        this.surname = person.surname;
-        this.description = person.description;
-        this.phone = person.phone;
-        this.mobile = person.mobile;
-        this.email = person.email;
-        this.regDate = person.regDate;
-        this.idnp = person.idnp;
-    }
-
-
 
     public void sendMeterInfo() {
 

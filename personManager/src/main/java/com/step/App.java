@@ -7,44 +7,60 @@ import com.step.manager.PersonManagerInMemory;
 import com.step.menu.Menu;
 import com.step.menu.MenuOption;
 import com.step.person.Person;
-import com.step.read.ReadObjectPersonData;
-//import com.step.read.ReadPersonDataFromFile;
-import com.step.write.WriteObjectPersonData;
 import com.step.write.WritePersonDataToFile;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args){
+    public static void main(String[] args) throws SQLException {
         List <Person> person = new ArrayList<>();
-        // citim optiunea
+        boolean enter;
+        IPersonManager personManager = null;
+        // Read option for working method
+        do {
         System.out.println("Please select type of Data to work with");
         System.out.println("Press 1 - for In Memory");
         System.out.println("Press 2 - for In File");
         System.out.println("Press 3 - for In DB");
-        int option = (new Scanner(System.in)).nextInt();
-        IPersonManager personManager = null;
 
-        switch(option) {
-            case 1: {
-                personManager = new PersonManagerInMemory();
-                break;
+            int option = 0;
+            try {
+                option = (new Scanner(System.in)).nextInt();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            case 2: {
-                personManager = new PersonManagerInFile();
-                person = ReadObjectPersonData.ReadObjectPersonFromFile();
-                //ReadPersonDataFromFile.readPersonFromFile();
-                break;
-            }
-            case 3: {
-                personManager = new PersonManagerDB();
-                break;
-            }
-        }
 
+            switch(option) {
+                case 1: {
+                    personManager = new PersonManagerInMemory();
+                    enter=true;
+                    break;
+                }
+                case 2: {
+                    personManager = new PersonManagerInFile();
+                    person = personManager.read(person);
+                    enter=true;
+//                person = ReadObjectPersonData.ReadObjectPersonFromFile();
+                    //ReadPersonDataFromFile.readPersonFromFile();
+                    break;
+                }
+                case 3: {
+                    personManager = new PersonManagerDB();
+                    personManager.read(person);
+                    enter=true;
+                    break;
+                }
+                default:
+                {
+                    System.out.println("Select a valid option");
+                    enter=false;
+                }
+            }
 
+        }while(!enter);
 
         MenuOption menuSelection= MenuOption.MAIN_MENU;
 
@@ -83,7 +99,7 @@ public class App {
                     break;
                 }
                 case ADD_PERSON: {
-                    personManager.add(person);
+                    personManager.insert(person);
                     menuSelection = MenuOption.PERSON_MENU;
                     break;
                 }
@@ -97,7 +113,8 @@ public class App {
                     break;
                 }
                 case VIEW_PERSON: {
-                    personManager.listPerson(person);
+                    personManager.read(person);
+                    personManager.show(person);
                     menuSelection = MenuOption.PERSON_MENU;
                     break;
                 }
@@ -111,27 +128,26 @@ public class App {
                     break;
                 }
                 case MODIFY_PERSON_DESC: {
-                    personManager.modify(1,person);
+                    personManager.update(1,person);
                     menuSelection = MenuOption.PERSON_MENU;
                     break;
                 }
                 case MODIFY_PERSON_PHONE: {
-                    personManager.modify(2,person);
+                    personManager.update(2,person);
                     menuSelection = MenuOption.PERSON_MENU;
                     break;
                 }
                 case MODIFY_PERSON_MOBIL: {
-                    personManager.modify(3,person);
+                    personManager.update(3,person);
                     menuSelection = MenuOption.PERSON_MENU;
                     break;
                 }
                 case MODIFY_PERSON_EMAIL: {
-                    personManager.modify(4,person);
+                    personManager.update(4,person);
                     menuSelection = MenuOption.PERSON_MENU;
                     break;
                 }
                 case EXIT: {
-//                    WriteObjectPersonData.WriteObjectPersonDataToFile(person);
                     personManager.close(person);
                     System.exit(0);
                 }
