@@ -7,3 +7,6 @@
 
 #CSV file
 *.csv
+*.txt
+
+target/*
