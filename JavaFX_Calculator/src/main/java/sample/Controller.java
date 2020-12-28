@@ -27,14 +27,13 @@ public class Controller {
         if (!pressEqual) {
             allEnteredButtonsTxtField.setText(allEnteredButtonsTxtField.getText() + enteredAndResultTxtField.getText() + "+");
             doubleFirstNumber = doubleFirstNumber + Double.parseDouble(enteredAndResultTxtField.getText());
-            enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
+            enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
         } else {
             allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText() + "+");
             doubleFirstNumber = Double.parseDouble(enteredAndResultTxtField.getText());
             pressEqual = false;
         }
         counter = false;
-
         operType = "+";
     }
 
@@ -42,12 +41,11 @@ public class Controller {
     void pressEight(ActionEvent event) {
         equalBtn.setDisable(false);
 
-        System.out.println("Counter =" + counter);
+//        System.out.println("8Counter =" + counter + ", Equal = " + pressEqual);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
                 enteredAndResultTxtField.setText("8");
-                counter = false;
             } else {
                 enteredAndResultTxtField.setText(enteredAndResultTxtField.getText() + "8");
             }
@@ -62,12 +60,11 @@ public class Controller {
     void pressFive(ActionEvent event) {
         equalBtn.setDisable(false);
 
-        System.out.println("Counter =" + counter);
+//        System.out.println("5Counter =" + counter + ", Equal = " + pressEqual);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
                 enteredAndResultTxtField.setText("5");
-                counter = false;
             } else {
                 enteredAndResultTxtField.setText(enteredAndResultTxtField.getText() + "5");
             }
@@ -85,8 +82,9 @@ public class Controller {
         switch (operType) {
             case "+": {
                 doubleFirstNumber = doubleFirstNumber + (Double.parseDouble(enteredAndResultTxtField.getText()));
-                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
-
+                System.out.println("Adunare=" + doubleFirstNumber);
+                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
+//                enteredAndResultTxtField.setText(doubleFirstNumber.toString());
                 counter = false;
                 pressEqual = true;
                 break;
@@ -94,7 +92,7 @@ public class Controller {
 
             case "-": {
                 doubleFirstNumber = doubleFirstNumber - (Double.parseDouble(enteredAndResultTxtField.getText()));
-                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
+                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
                 counter = false;
                 pressEqual = true;
                 break;
@@ -102,7 +100,7 @@ public class Controller {
 
             case "*": {
                 doubleFirstNumber = doubleFirstNumber * (Double.parseDouble(enteredAndResultTxtField.getText()));
-                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
+                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
                 counter = false;
                 pressEqual = true;
                 break;
@@ -110,7 +108,7 @@ public class Controller {
 
             case "/": {
                 doubleFirstNumber = doubleFirstNumber / (Double.parseDouble(enteredAndResultTxtField.getText()));
-                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
+                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
 
                 counter = false;
                 pressEqual = true;
@@ -118,7 +116,7 @@ public class Controller {
             }
             case "^": {
                 doubleFirstNumber = Math.pow(doubleFirstNumber, (Double.parseDouble(enteredAndResultTxtField.getText())));
-                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
+                enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
                 counter = false;
                 pressEqual = true;
                 break;
@@ -131,7 +129,7 @@ public class Controller {
         if (!pressEqual) {
             allEnteredButtonsTxtField.setText(allEnteredButtonsTxtField.getText() + enteredAndResultTxtField.getText() + "-");
             doubleFirstNumber = doubleFirstNumber + Double.parseDouble(enteredAndResultTxtField.getText());
-            enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
+            enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
         } else {
             allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText() + "-");
             doubleFirstNumber = Double.parseDouble(enteredAndResultTxtField.getText());
@@ -147,7 +145,7 @@ public class Controller {
         if (!pressEqual) {
             allEnteredButtonsTxtField.setText(allEnteredButtonsTxtField.getText() + enteredAndResultTxtField.getText() + "*");
             doubleFirstNumber = doubleFirstNumber + Double.parseDouble(enteredAndResultTxtField.getText());
-            enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
+            enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
         } else {
             allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText() + "*");
             doubleFirstNumber = Double.parseDouble(enteredAndResultTxtField.getText());
@@ -162,7 +160,7 @@ public class Controller {
         if (!pressEqual) {
             allEnteredButtonsTxtField.setText(allEnteredButtonsTxtField.getText() + enteredAndResultTxtField.getText() + "/");
             doubleFirstNumber = doubleFirstNumber + Double.parseDouble(enteredAndResultTxtField.getText());
-            enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(.0)", ""));
+            enteredAndResultTxtField.setText(!doubleFirstNumber.toString().matches("(.*).0") ? doubleFirstNumber.toString() : doubleFirstNumber.toString().replaceAll("(\\.0)", ""));
         } else {
             allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText() + "/");
             doubleFirstNumber = Double.parseDouble(enteredAndResultTxtField.getText());
@@ -176,7 +174,7 @@ public class Controller {
     void pressFour(ActionEvent event) {
         equalBtn.setDisable(false);
 
-        System.out.println("Counter =" + counter);
+//        System.out.println("Counter =" + counter);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
@@ -196,7 +194,7 @@ public class Controller {
     @FXML
     void pressNine(ActionEvent event) {
         equalBtn.setDisable(false);
-        System.out.println("Counter =" + counter);
+//        System.out.println("Counter =" + counter);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
@@ -216,7 +214,7 @@ public class Controller {
     void pressOne(ActionEvent event) {
         equalBtn.setDisable(false);
 
-        System.out.println("Counter =" + counter);
+//        System.out.println("Counter =" + counter);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
@@ -236,7 +234,7 @@ public class Controller {
     void pressSeven(ActionEvent event) {
         equalBtn.setDisable(false);
 
-        System.out.println("Counter =" + counter);
+//        System.out.println("Counter =" + counter);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
@@ -255,7 +253,7 @@ public class Controller {
     @FXML
     void pressSix(ActionEvent event) {
         equalBtn.setDisable(false);
-        System.out.println("Counter =" + counter);
+//        System.out.println("Counter =" + counter);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
@@ -274,7 +272,7 @@ public class Controller {
     @FXML
     void pressThree(ActionEvent event) {
         equalBtn.setDisable(false);
-        System.out.println("Counter =" + counter);
+//        System.out.println("Counter =" + counter);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
@@ -293,7 +291,7 @@ public class Controller {
     @FXML
     void pressTwo(ActionEvent event) {
         equalBtn.setDisable(false);
-        System.out.println("Counter =" + counter);
+//        System.out.println("Counter =" + counter);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
@@ -312,7 +310,7 @@ public class Controller {
     @FXML
     void pressZero(ActionEvent event) {
         equalBtn.setDisable(false);
-        System.out.println("Counter =" + counter);
+//        System.out.println("Counter =" + counter);
         if (counter) {
             if (pressEqual) {
                 allEnteredButtonsTxtField.setText(enteredAndResultTxtField.getText());
@@ -327,8 +325,10 @@ public class Controller {
     @FXML
     void cleanEnteredTxt(ActionEvent event) {
         enteredAndResultTxtField.setText("");
+        allEnteredButtonsTxtField.setText("");
+        doubleFirstNumber = 0.0;
         counter = false;
-
+        pressEqual = false;
     }
 
     @FXML
@@ -370,62 +370,4 @@ public class Controller {
             isNegativ = false;
         }
     }
-
-
-//    public static Integer calculateOperations(String operType, Integer number1, Integer number2) {
-//        Integer intResult;
-//        switch (operType) {
-//            case "+": {
-//                intResult = number1 + number2;
-//                break;
-//            }
-//
-//            case "-": {
-//                intResult = number1 - number2;
-//                break;
-//            }
-//
-//            case "*": {
-//                intResult = number1 * number2;
-//                break;
-//            }
-//
-//            case "/": {
-//                intResult = number1 / number2;
-//                break;
-//            }
-//            default:
-//                intResult = 0;
-//        }
-//        return intResult;
-//    }
-//
-//    public static Double calculateOperations(String operType, Double number1, Double number2) {
-//        Double doubleResult;
-//        switch (operType) {
-//            case "+": {
-//                doubleResult = number1 + number2;
-//                break;
-//            }
-//
-//            case "-": {
-//                doubleResult = number1 - number2;
-//                break;
-//            }
-//
-//            case "*": {
-//                doubleResult = number1 * number2;
-//                break;
-//            }
-//
-//            case "/": {
-//                doubleResult = number1 / number2;
-//                break;
-//            }
-//            default:
-//                doubleResult = 0.0;
-//        }
-//        return doubleResult;
-//    }
-
 }
