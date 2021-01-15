@@ -1,12 +1,12 @@
 package com.step;
 
 import com.step.person.Person;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
 import java.sql.*;
@@ -22,6 +22,7 @@ public class Controller {
     LocalDate today = LocalDate.now();
     int index = -1;
     String operation = "", sql = "";
+
 
     @FXML
     private Pane formPane;
@@ -146,13 +147,13 @@ public class Controller {
     void pressEdit(ActionEvent event) {
         operation = "M";
         index = person.getSelectionModel().getSelectedIndex();
-        nameTxtForm.setText(personName.getCellData(index).toString());
-        surnameTxtForm.setText(personSurname.getCellData(index).toString());
-        descTxtForm.setText(personDescription.getCellData(index).toString());
-        phoneTxtForm.setText(personPhone.getCellData(index).toString());
-        mobilTxtForm.setText(personMobile.getCellData(index).toString());
-        emailTxtForm.setText(personEmail.getCellData(index).toString());
-        idnpTxtForm.setText(personIDNP.getCellData(index).toString());
+        nameTxtForm.setText(personName.getCellData(index));
+        surnameTxtForm.setText(personSurname.getCellData(index));
+        descTxtForm.setText(personDescription.getCellData(index));
+        phoneTxtForm.setText(personPhone.getCellData(index));
+        mobilTxtForm.setText(personMobile.getCellData(index));
+        emailTxtForm.setText(personEmail.getCellData(index));
+        idnpTxtForm.setText(personIDNP.getCellData(index));
         formPane.setDisable(false);
         newBtn.setDisable(true);
         enterBtn.setDisable(false);

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="849.0" prefWidth="1281.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.step.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <GridPane gridLinesVisible="true" vgap="3.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="705.0" minHeight="10.0" prefHeight="634.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="645.0" minHeight="10.0" prefHeight="110.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="256.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="newBtn" layoutX="52.0" layoutY="-4.0" mnemonicParsing="false" onAction="#pressAdd" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: white; -fx-font-size: 20px;" text="New" />
+                        <Button fx:id="deleteBtn" layoutX="156.0" layoutY="-6.0" mnemonicParsing="false" onAction="#pressDelete" prefWidth="100.0" style="-fx-background-color: white; -fx-font-size: 20px;" text="Delete" />
+                        <Button fx:id="editBtn" layoutX="281.0" layoutY="-5.0" mnemonicParsing="false" onAction="#pressEdit" prefWidth="100.0" style="-fx-background-color: white; -fx-font-size: 20px;" text="Edit" />
+                        <Button fx:id="cancelBtn" disable="true" layoutX="558.0" layoutY="-7.0" mnemonicParsing="false" onAction="#pressCancel" prefWidth="100.0" style="-fx-background-color: white; -fx-font-size: 20px;" text="Cancel" />
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="42.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../JavaFX_icons/pngwing.com.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="275.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../JavaFX_icons/edit-32.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="142.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../JavaFX_icons/delete-32.png" />
+                           </image></ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="542.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../JavaFX_icons/close-window-32.png" />
+                           </image></ImageView>
+                        <Button fx:id="enterBtn" disable="true" layoutX="412.0" layoutY="-6.0" mnemonicParsing="false" onAction="#pressEnter" prefWidth="100.0" style="-fx-background-color: white; -fx-font-size: 20px;" text="Enter" />
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="403.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../JavaFX_icons/accept-database-32.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <TableView fx:id="person" prefHeight="627.0" prefWidth="1150.0">
+                    <columns>
+                      <TableColumn fx:id="personID" prefWidth="37.999969482421875" text="ID" />
+                      <TableColumn fx:id="personName" prefWidth="86.0" text="Name" />
+                        <TableColumn fx:id="personSurname" prefWidth="203.0" text="Surname" />
+                        <TableColumn fx:id="personDescription" maxWidth="325.0" minWidth="-1.0" prefWidth="276.0" text="Description" />
+                        <TableColumn fx:id="personPhone" prefWidth="82.0" text="Phone" />
+                        <TableColumn fx:id="personMobile" prefWidth="78.0" text="Mobile" />
+                        <TableColumn fx:id="personEmail" prefWidth="169.0" text="Email" />
+                        <TableColumn fx:id="personRegDate" prefWidth="115.0" text="Register Date" />
+                        <TableColumn fx:id="personIDNP" prefWidth="77.0" text="IDNP" />
+                    </columns>
+                  </TableView>
+                  <Pane fx:id="formPane" disable="true" prefHeight="117.0" prefWidth="1150.0" GridPane.rowIndex="1">
+                     <children>
+                        <TextField fx:id="nameTxtForm" layoutX="21.0" layoutY="14.0" promptText="Name" />
+                        <TextField fx:id="surnameTxtForm" layoutX="21.0" layoutY="66.0" promptText="Surname" />
+                        <TextField fx:id="phoneTxtForm" layoutX="231.0" layoutY="14.0" promptText="Phone number" />
+                        <TextField fx:id="mobilTxtForm" layoutX="231.0" layoutY="66.0" promptText="Mobile number" />
+                        <TextField fx:id="emailTxtForm" layoutX="441.0" layoutY="14.0" promptText="Email" />
+                        <TextField fx:id="idnpTxtForm" layoutX="441.0" layoutY="66.0" promptText="IDNP" />
+                        <TextArea fx:id="descTxtForm" layoutX="650.0" layoutY="14.0" prefHeight="82.0" prefWidth="456.0" promptText="Description" />
+                     </children></Pane>
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <Pane prefHeight="26.0" prefWidth="1281.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <Pane prefHeight="798.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="26.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+               </children></Pane>
+         </left>
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</GridPane>
