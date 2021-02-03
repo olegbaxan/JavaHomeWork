@@ -241,7 +241,7 @@ public class Controller implements Initializable {
             newPersonMenuId.setDisable(true);
             deletePersonMenuId.setDisable(true);
             editPersonMenuId.setDisable(true);
-        }else{
+        } else {
             Alert alert = new Alert(Alert.AlertType.WARNING, "");
             alert.setTitle("Warning error");
             alert.setContentText("Please select an item from Table to continue");
@@ -275,7 +275,7 @@ public class Controller implements Initializable {
             newPersonMenuId.setDisable(true);
             deletePersonMenuId.setDisable(true);
             editPersonMenuId.setDisable(true);
-        }else{
+        } else {
             Alert alert = new Alert(Alert.AlertType.WARNING, "");
             alert.setTitle("Warning error");
             alert.setContentText("Please select an item from Table to continue");
@@ -310,7 +310,7 @@ public class Controller implements Initializable {
             personFormPane.setVisible(true);
             personTable.setPrefHeight(personTable.getPrefHeight() - personFormPane.getPrefHeight());
             personPageAnchorPane.setBottomAnchor(personTable, personPageAnchorPane.getBottomAnchor(personTable) + personFormPane.getPrefHeight());
-        }else{
+        } else {
             Alert alert = new Alert(Alert.AlertType.WARNING, "");
             alert.setTitle("Warning error");
             alert.setContentText("Please select an item from Table to continue");
@@ -345,7 +345,7 @@ public class Controller implements Initializable {
             personFormPane.setVisible(true);
             personTable.setPrefHeight(personTable.getPrefHeight() - personFormPane.getPrefHeight());
             personPageAnchorPane.setBottomAnchor(personTable, personPageAnchorPane.getBottomAnchor(personTable) + personFormPane.getPrefHeight());
-        }else{
+        } else {
             Alert alert = new Alert(Alert.AlertType.WARNING, "");
             alert.setTitle("Warning error");
             alert.setContentText("Please select an item from Table to continue");

@@ -22,7 +22,7 @@
 
 <AnchorPane prefHeight="946.0" prefWidth="1333.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.step.Controller">
    <children>
-      <MenuBar layoutX="-11.0" layoutY="-2.0" prefHeight="32.0" prefWidth="1276.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <MenuBar layoutX="-11.0" layoutY="-2.0" prefHeight="32.0" prefWidth="1276.0" style="-fx-font-size: 14px;" styleClass="css/menu.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -52,9 +52,9 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TabPane layoutY="31.0" prefHeight="915.0" prefWidth="1333.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMinHeight="1.0" tabMinWidth="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
+      <TabPane layoutY="31.0" prefHeight="915.0" prefWidth="1333.0" side="LEFT" styleClass="css/tab.css" tabClosingPolicy="UNAVAILABLE" tabMinHeight="1.0" tabMinWidth="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
         <tabs>
-          <Tab fx:id="mainTab" style="-fx-font-size: 20px;" text="Main tab" />
+          <Tab fx:id="mainTab" disable="true" style="-fx-font-size: 20px;" text="Main tab" />
           <Tab fx:id="personTab" style="-fx-font-size: 20px;" text="Person">
                <content>
                   <AnchorPane fx:id="personPageAnchorPane" prefHeight="754.0" prefWidth="1174.0">
