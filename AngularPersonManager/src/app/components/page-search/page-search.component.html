@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <form class="d-flex" action="list" method="post">
+        <div class="col-sm-12 col-md-6">
+          <div class="dataTables_length bs-select" id="dtBasicExample_length">
+            <label>Show
+              <select name="dtBasicExample_length" aria-controls="dtBasicExample" class="custom-select custom-select-sm form-control form-control-sm">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+              entries</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-5">
+      <form class="d-flex" action="list" method="post">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+        <button class="btn btn-success btn-lg text-center" type="submit" >Search</button>
+        <a href="list" class="btn btn-primary btn-lg text-center" role="button" aria-pressed="true">Clear</a>
+      </form>
+    </div>
+  </div>
+</div>
+

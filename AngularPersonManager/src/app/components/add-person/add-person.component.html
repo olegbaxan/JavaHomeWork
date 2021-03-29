@@ -1,0 +1,66 @@
+<div class="container">
+  <app-header></app-header>
+
+  <div class="row">
+    <div class="col-1" style="border: 2px solid; border-color: rgb(0, 38, 255);">
+      <app-leftmenu></app-leftmenu>
+    </div>
+
+    <div class="col-11 pt-3" style="border: 2px solid; border-color: rgb(0, 38, 255);">
+      <form [formGroup] = "formdata" (ngSubmit) = "createPerson(formdata.value)" >
+        <div class="form-row ">
+          <div class="col-2 text-right align-middle">
+            <label for="InputName">Person name</label>
+          </div>
+          <div class="col-10">
+          <input type="text" class="form-control" id="InputName"  placeholder="Enter name" formControlName="name" required >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="InputSurname">Person surname</label>
+          <input type="text" class="form-control" id="InputSurname"  placeholder="Enter surname" formControlName="surname" required>
+
+        </div>
+        <div class="form-group">
+          <label for="InputDescription">Description</label>
+          <input type="text" class="form-control" id="InputDescription"  placeholder="Enter description" formControlName="description">
+
+        </div>
+        <div class="form-group">
+          <label for="InputPhone">Phone number</label>
+          <input type="number" class="form-control" id="InputPhone" placeholder="Enter phone number" formControlName="phone">
+        </div>
+        <div class="form-group">
+          <label for="InputMobile">Email address</label>
+          <input type="number" class="form-control" id="InputMobile" placeholder="Enter mobile number" formControlName="mobile">
+        </div>
+
+        <div class="form-group">
+          <label for="InputEmail">Email address</label>
+          <input type="email" class="form-control" id="InputEmail" placeholder="Enter email" formControlName="email" required>
+        </div>
+        <div class="form-group">
+          <label for="InputIDNP">IDNP</label>
+          <input type="text" class="form-control" id="InputIDNP" placeholder="IDNP" formControlName="idnp" required>
+        </div>
+        <div class="form-group">
+          <label for="InputBirthday">Birthday</label>
+          <input type="date" class="form-control" id="InputBirthday" placeholder="Birthday" formControlName="birthday">
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="createPerson(formdata)">Submit</button>
+      </form>
+    </div>
+
+  </div>
+  <p>
+    Name entered is : {{name}}
+    Surname entered is : {{surname}}
+  </p>
+
+  <app-footer></app-footer>
+
+  <a href="${pageContext.request.contextPath}/">Back to main page</a>
+</div>
+
+
+

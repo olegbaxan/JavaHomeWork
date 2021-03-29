@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a8a77e9-96be-4c75-9bdc-15290db4033c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstWebProject/FirstWebProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstWebProject/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FirstWebProject/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/.idea/artifacts/PersonManagerAppWeb_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/PersonManagerAppWeb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/out/artifacts/PersonManagerAppWeb_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/out/artifacts/PersonManagerAppWeb_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/out/artifacts/PersonManagerAppWeb_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/out/artifacts/PersonManagerAppWeb_war_exploded/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/src/main/java/com/step/servlet/ListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/target/PersonManagerAppWeb-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerAppWeb/web/views/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/.idea/artifacts/PersonManagerWeb_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/PersonManagerWeb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/connection/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/entity/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/files/FilePaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/model/PersonModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/read/ReadPersonDataFromFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/read/ReadPersonDataFromXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/read/ReadPersonDataFromXML_SAX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/servlet/AddServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/servlet/DeleteServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/servlet/EditServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/servlet/ListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/write/WritePersonDataToFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/src/main/java/com/step/write/WritePersonDataToXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/accept-database-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/building.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/categories.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/close-window-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/delete-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/edit-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/persons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/pngwing.com.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/img/search_reset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/views/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/views/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/views/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PersonManagerWeb/web/views/list_copy.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReportMaker/ReportMaker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReportMaker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_Calculator/src/main/java/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaFX_Calculator/src/main/java/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/JavaFX_Calculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/src/main/java/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/src/main/java/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/src/main/resources/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/target/JavaFX_first-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/target/classes/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaFX_first/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project till Interface/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project till Interface/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project till Interface/Proiect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project till Interface/Proiect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project till Interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project till Interface/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project till Interface/src/main/java/com/step/person/PersonDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project till Interface/src/main/java/com/step/person/PersonDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project till Interface/src/test/java/com/step/person/PersonDataManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project till Interface/src/test/java/com/step/person/PersonDataManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReportMaker/personManagerFX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ReportMaker/personManagerFX.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkingBeforeStreamAPI/src/main/java/com/step/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingBeforeStreamAPI/src/main/java/com/step/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkingWithStreamAPI/src/main/java/com/step/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingWithStreamAPI/src/main/java/com/step/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkingWithStreamAPI/src/main/java/com/step/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkingWithStreamAPI/src/main/java/com/step/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fx-employee-master/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/personManager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/manager/IPersonManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/manager/IPersonManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/manager/PersonManagerDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/manager/PersonManagerDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/manager/PersonManagerInFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/manager/PersonManagerInFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/manager/PersonManagerInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/manager/PersonManagerInMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/menu/MenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/menu/MenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/person/PersonDataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/person/PersonDataManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/read/ReadObjectPersonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/read/ReadObjectPersonData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/read/ReadPersonDataFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/read/ReadPersonDataFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/read/ReadPersonDataFromXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/read/ReadPersonDataFromXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/read/ReadPersonDataFromXML_SAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/read/ReadPersonDataFromXML_SAX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/ui/PersonCommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/ui/PersonCommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/write/WritePersonDataToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/write/WritePersonDataToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/main/java/com/step/write/WritePersonDataToXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/main/java/com/step/write/WritePersonDataToXML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/test/java/com/step/person/PersonManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/test/java/com/step/person/PersonManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManager/src/test/java/com/step/ui/PersonCommonMethodsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManager/src/test/java/com/step/ui/PersonCommonMethodsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/src/main/java/com/step/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManagerFX/src/main/java/com/step/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/src/main/java/com/step/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../personManagerFX/src/main/java/com/step/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/src/main/resources/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../personManagerFX/src/main/resources/fxml/mainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/DEPENDENCIES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/NOTICE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/jdom-info.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/licenses/client-2.1.jar/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/licenses/common-2.1.jar/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/licenses/saslprep-1.1.jar/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/licenses/stringprep-1.1.jar/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/com.google.collections/google-collections/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/com.google.collections/google-collections/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/com.googlecode.json-simple/json-simple/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/com.googlecode.json-simple/json-simple/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/com.thoughtworks.qdox/qdox/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/com.thoughtworks.qdox/qdox/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-codec/commons-codec/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-codec/commons-codec/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-collections/commons-collections/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-collections/commons-collections/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-io/commons-io/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-io/commons-io/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-lang/commons-lang/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-lang/commons-lang/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-logging/commons-logging/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/commons-logging/commons-logging/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.commons/commons-compress/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.commons/commons-compress/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.commons/commons-lang3/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.commons/commons-lang3/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.httpcomponents/httpclient/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.httpcomponents/httpclient/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.httpcomponents/httpcore/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.httpcomponents/httpcore/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-core/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-core/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-decoration-model/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-decoration-model/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-logging-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-logging-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-module-xhtml/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-module-xhtml/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-module-xhtml5/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-module-xhtml5/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-sink-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-sink-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-site-renderer/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-site-renderer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-skin-model/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.doxia/doxia-skin-model/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-assembly-plugin/plugin-help.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-assembly-plugin/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-assembly-plugin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-compiler-plugin/plugin-help.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-compiler-plugin/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-compiler-plugin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-dependency-plugin/plugin-help.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-dependency-plugin/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-dependency-plugin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-jar-plugin/plugin-help.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-jar-plugin/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.plugins/maven-jar-plugin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.reporting/maven-reporting-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.reporting/maven-reporting-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.reporting/maven-reporting-impl/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.reporting/maven-reporting-impl/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/file-management/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/file-management/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-artifact-transfer/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-artifact-transfer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-common-artifact-filters/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-common-artifact-filters/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-dependency-analyzer/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-dependency-analyzer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-dependency-tree/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-dependency-tree/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-filtering/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-filtering/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-shared-incremental/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-shared-incremental/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-shared-io/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-shared-io/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-shared-utils/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.shared/maven-shared-utils/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.wagon/wagon-provider-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven.wagon/wagon-provider-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-aether-provider/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-aether-provider/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-archiver/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-artifact/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-artifact/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-compat/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-compat/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-core/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-core/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-model-builder/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-model-builder/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-model/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-model/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-plugin-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-plugin-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-repository-metadata/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-repository-metadata/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-settings-builder/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-settings-builder/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-settings/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.maven/maven-settings/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.struts/struts-core/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.struts/struts-core/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.struts/struts-taglib/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.struts/struts-taglib/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.struts/struts-tiles/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.struts/struts-tiles/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.xbean/xbean-reflect/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.apache.xbean/xbean-reflect/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-archiver/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-classworlds/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-classworlds/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-compiler-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-compiler-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-compiler-javac/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-compiler-javac/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-compiler-manager/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-compiler-manager/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-component-annotations/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-component-annotations/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-container-default/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-container-default/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-i18n/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-i18n/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-interpolation/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-interpolation/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-io/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-io/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-java/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-java/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-utils/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-utils/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-velocity/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.codehaus.plexus/plexus-velocity/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.eclipse.aether/aether-util/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.eclipse.aether/aether-util/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.iq80.snappy/snappy/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.iq80.snappy/snappy/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.slf4j/slf4j-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.slf4j/slf4j-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.aether/aether-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.aether/aether-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.aether/aether-impl/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.aether/aether-impl/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.aether/aether-spi/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.aether/aether-spi/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.aether/aether-util/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.aether/aether-util/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.plexus/plexus-build-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.plexus/plexus-build-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.plexus/plexus-cipher/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.plexus/plexus-cipher/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.plexus/plexus-sec-dispatcher/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.plexus/plexus-sec-dispatcher/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.sisu/sisu-inject-bean/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.sisu/sisu-inject-bean/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.sisu/sisu-inject-plexus/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/org.sonatype.sisu/sisu-inject-plexus/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/plugin-expressions/project.paramdoc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/plugin-expressions/rootless.paramdoc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/plugin-expressions/settings.paramdoc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/maven/plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/plexus/artifact-handlers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/plexus/components.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/services/java.sql.Driver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/tld/struts-bean.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/tld/struts-html.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/tld/struts-logic.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/tld/struts-nested.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/tld/struts-tiles.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/tlds/sslext.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/META-INF/velocity-view.tld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/analyze-report.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/analyze-report_de.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/analyze-report_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/analyze-report_pt_BR.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/analyze-report_sv.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/assemblies/bin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/assemblies/jar-with-dependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/assemblies/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/assemblies/src.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/decoration-1.7.0.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/default-report.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/fxml/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../personManagerFX/target/classes/fxml/mainPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/mappers.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/beanutils/converters/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/beanutils/locale/converters/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/beanutils/locale/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/beanutils/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/chain/config/test-config-2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/chain/config/test-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/collections/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/digester/xmlrules/digester-rules.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/digester-rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateByte-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateByte.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateCreditCard-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateCreditCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateDate-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateDate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateEmail-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateEmail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateFloat-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateFloat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateFloatRange-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateFloatRange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateIntRange-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateIntRange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateInteger-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateInteger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateMask-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateMask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateMaxLength-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateMaxLength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateMinLength-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateMinLength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateRequired-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateRequired.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateShort-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateShort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateUtilities-compress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/javascript/validateUtilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/resources/validator_1_0.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/resources/validator_1_0_1.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/resources/validator_1_1.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/resources/validator_1_1_3.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/resources/validator_1_2_0.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/commons/validator/resources/validator_1_3_0.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/http/client/version.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/http/version.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/css/maven-base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/default-site-macros.vm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/default-site.vm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/images/collapsed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/images/expanded.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/images/logos/build-by-maven-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/images/logos/build-by-maven-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/doxia/siterenderer/resources/images/logos/maven-feather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_de.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_el.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_es.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_ko.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_nl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_no.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_pl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/messages/messages_zh_CN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/model/pom-4.0.0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/project/standalone.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/maven/shared/utils/annotations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/action/ActionResources.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/action/ActionResources_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/action/LocalStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/action/LocalStrings_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/chain/chain-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/resources/struts-config_1_0.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/resources/struts-config_1_1.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/resources/struts-config_1_2.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/resources/struts-config_1_3.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/resources/tiles-config_1_1.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/resources/tiles-config_1_3.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/resources/web-app_2_3.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/taglib/LocalStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/taglib/LocalStrings_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/taglib/bean/LocalStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/taglib/bean/LocalStrings_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/taglib/html/LocalStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/taglib/html/LocalStrings_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/taglib/logic/LocalStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/taglib/logic/LocalStrings_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/tiles/chain-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/util/LocalStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/util/LocalStrings_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/validator/LocalStrings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/validator/validator-rules-compressed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/struts/validator/validator-rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/velocity/runtime/defaults/directive.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/velocity/runtime/defaults/velocity.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/velocity/texen/defaults/texen.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/velocity/tools/generic/times.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/velocity/tools/generic/tools.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/velocity/tools/struts/tools.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/velocity/tools/view/tools.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/apache/velocity/tools/view/velocity.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/org/sonatype/plexus/build/incremental/version.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/overview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_de.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_es.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_it.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_ja.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_nl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_pl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_pt_BR.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_sv.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/classes/site-renderer_zh_CN.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../personManagerFX/target/personManagerFX-0.0.1-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../personManagerFX/target/personManagerFX-0.0.1-jar-with-dependencies.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1pYrahuWOYQvMSMNjYCrTOA0hC4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a8a77e9-96be-4c75-9bdc-15290db4033c" name="Default Changelist" comment="" />
+      <created>1615370931181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615370931181</updated>
+      <workItem from="1615370932343" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
