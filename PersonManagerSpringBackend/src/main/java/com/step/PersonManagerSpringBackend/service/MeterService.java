@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.el.MethodNotFoundException;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -53,6 +55,13 @@ public class MeterService {
         newMeter.setSupplier(linkedSupplier);
 
         final Meter addMeter = meterRepository.save(newMeter);
+
+//        if (linkedFlat.getMeter() == null) {
+//            linkedFlat.setMeter(new ArrayList<>());
+//        }
+//        linkedFlat.getMeter().add(newMeter);
+//        flatRepository.save(linkedFlat);
+
         return MeterDTO.from(addMeter);
     }
 
@@ -88,6 +97,13 @@ public class MeterService {
         meter.setSupplier(linkedSupplier);
         meter.setFlat(linkedFlat);
         final Meter savedMeter = this.meterRepository.save(meter);
+
+//        if (linkedFlat.getMeter() == null) {
+//            linkedFlat.setMeter(new ArrayList<>());
+//        }
+//        linkedFlat.getMeter().add(savedMeter);
+//        flatRepository.save(linkedFlat);
+
         return MeterDTO.from(savedMeter);
     }
 

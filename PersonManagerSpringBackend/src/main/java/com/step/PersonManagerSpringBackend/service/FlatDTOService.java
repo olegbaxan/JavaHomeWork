@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -19,22 +21,31 @@ public class FlatDTOService {
     private PersonRepository personRepository;
     @Autowired
     private AddressRepository addressRepository;
-    @Autowired
-    private MeterRepository meterRepository;
+//    @Autowired
+//    private MeterRepository meterRepository;
 
 
     public void create(FlatDTO dto) throws Exception {
         Flat flat = new Flat();
+        System.out.println("Into FlatDTOService");
         flat.setFlatNumber(dto.getFlatNumber());
         flat.setFloor(dto.getFloor());
         flat.setBuildLadder(dto.getBuildLadder());
         flat.setNumberOfPerson(dto.getNumberOfPerson());
         final Address address = this.addressRepository.findById(dto.getAddress()).orElseThrow(() -> new Exception("Cannot link Flat. Address does not exist."));
         flat.setAddress(address);
-//        final List<Person> person = this.personRepository.findById(dto.getPerson().get()).orElseThrow(() -> new Exception("Cannot link Flat. Person does not exist."));
-//        flat.setPerson(person);
-//        final List<Meter> meter = this.meterRepository.findById(dto.getMeter()).orElseThrow(() -> new Exception("Cannot link Flat. Meter does not exist."));
-//        flat.setMeter(meter);
+         //persons = new ArrayList<>();
+        List<Person> persons=this.personRepository.findByPersonIdIsIn(dto.getPerson());
+        System.out.println("FlatDTO create "+ dto.getPerson());
+         //meters = new ArrayList<>();
+//        List<Meter> meters=this.meterRepository.findByMeterIdIsIn(dto.getMeter());
+//        System.out.println("FlatDTO create "+ dto.getMeter());
+        flat.setPerson(persons);
+        for(int i=0;i<persons.size();i++){
+            if(!persons.get(i).getFlat().equals(dto.getFlatid())){
+                persons.get(i).getFlat().add(flat);
+            }
+        }
         Flat savedFlat=this.flatRepository.save(flat);
 
     }
@@ -67,10 +78,14 @@ public class FlatDTOService {
         flat.setNumberOfPerson(flatToUpdate.getNumberOfPerson());
         final Address address = this.addressRepository.findById(flatToUpdate.getAddress()).orElseThrow(() -> new Exception("Cannot link Flat. Address does not exist."));
         flat.setAddress(address);
-//        final List<Person> person = this.personRepository.findById(flatToUpdate.getPerson()).orElseThrow(() -> new Exception("Cannot link Flat. Person does not exist."));
-//        flat.setPerson(person);
-//        final List<Meter> meter = this.meterRepository.findById(flatToUpdate.getMeter()).orElseThrow(() -> new Exception("Cannot link Flat. Meter does not exist."));
-//        flat.setMeter(meter);
+         //person = new ArrayList<>();
+        List<Person> person=this.personRepository.findByPersonIdIsIn(flatToUpdate.getPerson());
+        flat.setPerson(person);
+        for(int i=0;i<person.size();i++){
+            if(!person.get(i).getFlat().equals(flatToUpdate.getFlatid())){
+                person.get(i).getFlat().add(flat);
+            }
+        }
         this.flatRepository.save(flat);
     }
 
@@ -78,6 +93,11 @@ public class FlatDTOService {
         Flat flat = this.flatRepository
                 .findById(id)
                 .orElseThrow(() -> new Exception("Flat does not exist"));
+//        List<Person> personToDeleteFlat = null;
+//        personToDeleteFlat=this.personRepository.findPersonByFlat(flat);
+//        for(int i=0;i<personToDeleteFlat.size();i++){
+//            personToDeleteFlat.get(i).getFlat().remove(flat);
+//        }
         this.flatRepository.delete(flat);
     }
 

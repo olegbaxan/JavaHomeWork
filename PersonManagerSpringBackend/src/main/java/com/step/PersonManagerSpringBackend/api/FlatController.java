@@ -1,12 +1,9 @@
 package com.step.PersonManagerSpringBackend.api;
 
 import com.step.PersonManagerSpringBackend.model.dto.FlatDTO;
-import com.step.PersonManagerSpringBackend.model.dto.PersonDTO;
 import com.step.PersonManagerSpringBackend.service.FlatService;
-import com.step.PersonManagerSpringBackend.service.PersonService;
 import com.step.PersonManagerSpringBackend.service.exception.AddressNotFoundException;
 import com.step.PersonManagerSpringBackend.service.exception.FlatNotFoundException;
-import com.step.PersonManagerSpringBackend.service.exception.PersonNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,7 +64,7 @@ public class FlatController {
     public ResponseEntity delete(@PathVariable("id") Integer id) {
         try {
             this.flatService.delete(id);
-            return ResponseEntity.ok("Person deleted successfully");
+            return ResponseEntity.ok("Flat deleted successfully");
         } catch (FlatNotFoundException ex) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
         }

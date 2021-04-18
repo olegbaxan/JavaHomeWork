@@ -29,7 +29,7 @@ public class AddressService {
         newAddress.setHouseNumber(addressDTO.getHouseNumber());
 
         final Address addAddress = addressRepository.save(newAddress);
-        return AddressDTO.from(newAddress);
+        return AddressDTO.from(addAddress);
     }
 
     public List<AddressDTO> findAll() {

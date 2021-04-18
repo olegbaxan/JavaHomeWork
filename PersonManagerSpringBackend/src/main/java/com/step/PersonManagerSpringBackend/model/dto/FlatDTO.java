@@ -15,17 +15,13 @@ public class FlatDTO {
     private String buildLadder;
     private List<Integer> person;
     private Integer address;
-    private List<Integer> meters;
+//    private List<Integer> meters;
 
-    public Integer getFlatid() {
-        return flatid;
-    }
-
-    public FlatDTO() {
+        public FlatDTO() {
 
     }
 
-    public FlatDTO(Integer flatid, byte floor, Integer flatNumber, byte numberOfPerson, String buildLadder, List<Integer> person, Integer address, List<Integer> meters) {
+    public FlatDTO(Integer flatid, byte floor, Integer flatNumber, byte numberOfPerson, String buildLadder, List<Integer> person, Integer address) {
         this.flatid = flatid;
         this.floor = floor;
         this.flatNumber = flatNumber;
@@ -33,7 +29,7 @@ public class FlatDTO {
         this.buildLadder = buildLadder;
         this.person = person;
         this.address = address;
-        this.meters = meters;
+//        this.meters = meters;
     }
 
     public static FlatDTO from(Flat flat) {
@@ -52,15 +48,17 @@ public class FlatDTO {
                     .collect(Collectors.toList());
             flatDTO.setPerson(pId);
         }
-        if(flat.getMeter() !=null){
-            final List<Integer> mId=flat.getMeter().stream()
-                    .map(meter -> meter.getMeterId())
-                    .collect(Collectors.toList());
-            flatDTO.setPerson(mId);
-        }
+//        if(flat.getMeter() !=null){
+//            final List<Integer> mId=flat.getMeter().stream()
+//                    .map(meter -> meter.getMeterId())
+//                    .collect(Collectors.toList());
+//            flatDTO.setMeter(mId);
+//        }
         return flatDTO;
     }
-
+    public Integer getFlatid() {
+        return flatid;
+    }
     public void setFlatid(Integer flatid) {
         this.flatid = flatid;
     }
@@ -113,11 +111,11 @@ public class FlatDTO {
         this.person = person;
     }
 
-    public List<Integer> getMeter() {
-        return meters;
-    }
-
-    public void setMeter(List<Integer> meters) {
-        this.meters = meters;
-    }
+//    public List<Integer> getMeter() {
+//        return meters;
+//    }
+//
+//    public void setMeter(List<Integer> meters) {
+//        this.meters = meters;
+//    }
 }

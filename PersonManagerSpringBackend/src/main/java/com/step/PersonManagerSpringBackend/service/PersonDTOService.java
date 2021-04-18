@@ -1,13 +1,15 @@
 package com.step.PersonManagerSpringBackend.service;
 
+import com.step.PersonManagerSpringBackend.model.Flat;
 import com.step.PersonManagerSpringBackend.model.Person;
 import com.step.PersonManagerSpringBackend.model.dto.PersonDTO;
+import com.step.PersonManagerSpringBackend.repository.FlatRepository;
 import com.step.PersonManagerSpringBackend.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 
 import java.time.LocalDate;
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -15,6 +17,8 @@ import java.util.stream.Collectors;
 public class PersonDTOService {
     @Autowired
     private PersonRepository personRepository;
+    @Autowired
+    private FlatRepository flatRepository;
 
     public void create(PersonDTO dto) throws Exception {
         Person person = new Person();
@@ -28,6 +32,10 @@ public class PersonDTOService {
         person.setWallet(dto.getWallet());
         person.setRegDate(LocalDate.now());
         person.setIdnp(dto.getIdnp());
+
+        List<Flat> flat = new ArrayList<>();
+        flat=this.flatRepository.findFlatsByFlatidIsIn(dto.getFlat());
+        person.setFlat(flat);
 
         Person savedEmployee = this.personRepository.save(person);
     }
@@ -62,6 +70,10 @@ public class PersonDTOService {
         person.setIdnp(personToUpdate.getIdnp());
         person.setEmail(personToUpdate.getEmail());
         person.setWallet(personToUpdate.getWallet());
+        List<Flat> flat = new ArrayList<>();
+        flat=this.flatRepository.findFlatsByFlatidIsIn(personToUpdate.getFlat());
+        person.setFlat(flat);
+
         this.personRepository.save(person);
     }
 

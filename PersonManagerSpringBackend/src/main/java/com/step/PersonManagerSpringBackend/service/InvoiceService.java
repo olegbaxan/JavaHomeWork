@@ -35,6 +35,7 @@ public class InvoiceService {
         newInvoice.setPayTill(invoiceDTO.getPayTill());
         newInvoice.setStatus(invoiceDTO.getStatus());
         newInvoice.setMeterDataCurrent(invoiceDTO.getMeterDataCurrent());
+        newInvoice.setMeterDataPrevious(invoiceDTO.getMeterDataPrevious());
         newInvoice.setUnitPrice(invoiceDTO.getUnitPrice());
 
 
@@ -82,6 +83,7 @@ public class InvoiceService {
         invoice.setPayTill(invoiceToUpdate.getPayTill());
         invoice.setStatus(invoiceToUpdate.getStatus());
         invoice.setMeterDataCurrent(invoiceToUpdate.getMeterDataCurrent());
+        invoice.setMeterDataPrevious(invoiceToUpdate.getMeterDataPrevious());
         invoice.setUnitPrice(invoiceToUpdate.getUnitPrice());
         Supplier linkedSupplier = null;
         if (invoiceToUpdate.getSupplier() != null) {

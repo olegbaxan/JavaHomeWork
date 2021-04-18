@@ -4,12 +4,9 @@ import com.step.PersonManagerSpringBackend.model.*;
 import com.step.PersonManagerSpringBackend.model.dto.FlatDTO;
 import com.step.PersonManagerSpringBackend.repository.AddressRepository;
 import com.step.PersonManagerSpringBackend.repository.FlatRepository;
-import com.step.PersonManagerSpringBackend.repository.MeterRepository;
 import com.step.PersonManagerSpringBackend.repository.PersonRepository;
 import com.step.PersonManagerSpringBackend.service.exception.AddressNotFoundException;
 import com.step.PersonManagerSpringBackend.service.exception.FlatNotFoundException;
-import com.step.PersonManagerSpringBackend.service.exception.MeterNotFoundException;
-import com.step.PersonManagerSpringBackend.service.exception.PersonNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,14 +18,14 @@ public class FlatService {
     private FlatRepository flatRepository;
     private PersonRepository personRepository;
     private AddressRepository addressRepository;
-    private MeterRepository meterRepository;
+//    private MeterRepository meterRepository;
 
     @Autowired
-    public FlatService(FlatRepository flatRepository, PersonRepository personRepository, AddressRepository addressRepository, MeterRepository meterRepository) {
+    public FlatService(FlatRepository flatRepository, PersonRepository personRepository, AddressRepository addressRepository) {
         this.flatRepository = flatRepository;
         this.personRepository = personRepository;
         this.addressRepository = addressRepository;
-        this.meterRepository = meterRepository;
+//        this.meterRepository = meterRepository;
     }
 
 
@@ -43,20 +40,20 @@ public class FlatService {
             linkedAddress = this.addressRepository.findById(flatDTO.getAddress()).
                     orElseThrow(() -> new AddressNotFoundException(flatDTO.getAddress()));
         }
-//        List<Person> linkedPerson = null;
-//        if (flatDTO.getPerson() != null) {
-//            linkedPerson = this.personRepository.findById(flatDTO.getPerson().get()).
-//                    orElseThrow(() -> new PersonNotFoundException(flatDTO.getPerson()));
-//        }
-//        List<Meter> linkedMeter = null;
-//        if (flatDTO.getMeter() != null) {
-//            linkedMeter = this.meterRepository.findById(flatDTO.getMeter()).
-//                    orElseThrow(() -> new MeterNotFoundException(flatDTO.getMeter()));
-//        }
-        newFlat.setAddress(linkedAddress);
-//        newFlat.setPerson(linkedPerson);
-//        newFlat.setMeter(linkedMeter);
 
+        List<Person> linkedPerson = null;
+        if (flatDTO.getPerson() != null) {
+            System.out.println("Person create "+ flatDTO.getPerson());
+                linkedPerson = this.personRepository.findByPersonIdIsIn(flatDTO.getPerson());
+        }
+        for(int i=0;i<linkedPerson.size();i++){
+            if(!linkedPerson.get(i).getFlat().equals(flatDTO.getFlatid())){
+                linkedPerson.get(i).getFlat().add(newFlat);
+            }
+        }
+        newFlat.setAddress(linkedAddress);
+        newFlat.setPerson(linkedPerson);
+//        newFlat.setMeter(linkedMeter);
         final Flat addFlat = flatRepository.save(newFlat);
         return FlatDTO.from(addFlat);
     }
@@ -83,18 +80,19 @@ public class FlatService {
             linkedAddress = this.addressRepository.findById(flatToUpdate.getAddress()).
                     orElseThrow(() -> new AddressNotFoundException(flatToUpdate.getAddress()));
         }
-//        List<Person> linkedPerson = null;
-//        if (flatToUpdate.getPerson() != null) {
-//            linkedPerson = this.personRepository.findById(flatToUpdate.getPerson()).
-//                    orElseThrow(() -> new FlatNotFoundException(flatToUpdate.getPerson()));
-//        }
-//        List<Meter> linkedMeter = null;
-//        if (flatToUpdate.getMeter() != null) {
-//            linkedMeter = this.meterRepository.findById(flatToUpdate.getMeter()).
-//                    orElseThrow(() -> new FlatNotFoundException(flatToUpdate.getMeter()));
-//        }
+        List<Person> linkedPerson = null;
+        if (flatToUpdate.getPerson() != null) {
+            System.out.println("Person update "+ flatToUpdate.getPerson());
+            linkedPerson = this.personRepository.findByPersonIdIsIn(flatToUpdate.getPerson());
+        }
+
+        for(int i=0;i<linkedPerson.size();i++){
+            if(!linkedPerson.get(i).getFlat().equals(flatToUpdate.getFlatid())){
+                linkedPerson.get(i).getFlat().add(flat);
+            }
+        }
         flat.setAddress(linkedAddress);
-//        flat.setPerson(linkedPerson);
+        flat.setPerson(linkedPerson);
 //        flat.setMeter(linkedMeter);
         final Flat savedFlat = this.flatRepository.save(flat);
         return FlatDTO.from(savedFlat);
@@ -102,6 +100,13 @@ public class FlatService {
 
     public void delete(Integer id) throws FlatNotFoundException {
         final Flat flat = this.flatRepository.findById(id).orElseThrow(() -> new FlatNotFoundException(id));
+        System.out.println("Flat");
+
+        List<Person> personToDeleteFlat = null;
+        personToDeleteFlat=this.personRepository.findPersonByFlat(flat);
+        for(int i=0;i<personToDeleteFlat.size();i++){
+            personToDeleteFlat.get(i).getFlat().remove(flat);
+        }
         this.flatRepository.delete(flat);
     }
 }

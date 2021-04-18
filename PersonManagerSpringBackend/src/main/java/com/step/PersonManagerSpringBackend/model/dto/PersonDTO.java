@@ -2,9 +2,9 @@ package com.step.PersonManagerSpringBackend.model.dto;
 
 import com.step.PersonManagerSpringBackend.model.Person;
 
-import javax.persistence.Column;
 import java.time.LocalDate;
-import java.util.Locale;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class PersonDTO {
 
@@ -22,7 +22,7 @@ public class PersonDTO {
     public PersonDTO() {
     }
 
-    public PersonDTO(Integer personId, String name, String surname, String description, String phone, String mobile, String email, double wallet, LocalDate regDate, String idnp) {
+    public PersonDTO(Integer personId, String name, String surname, String description, String phone, String mobile, String email, double wallet, LocalDate regDate, String idnp, List<Integer> flat) {
         this.personId = personId;
         this.name = name;
         this.surname = surname;
@@ -33,14 +33,46 @@ public class PersonDTO {
         this.wallet = wallet;
         this.regDate = regDate;
         this.idnp = idnp;
+        this.flat = flat;
     }
 
-    public static PersonDTO from(Person person) {
-        final PersonDTO personDTO = new PersonDTO(person.getPersonId(), person.getName(),
-                person.getSurname(), person.getDescription(), person.getPhone(),person.getMobile(),
-                person.getEmail(),person.getWallet(),person.getRegDate(),person.getIdnp());
+    private List<Integer> flat;
 
+
+
+
+    public static PersonDTO from(Person person) {
+        final PersonDTO personDTO = new PersonDTO(
+//                person.getPersonId(), person.getName(),
+//                person.getSurname(), person.getDescription(), person.getPhone(),person.getMobile(),
+//                person.getEmail(),person.getWallet(),person.getRegDate(),person.getIdnp()
+        );
+        personDTO.setPersonId(person.getPersonId());
+        personDTO.setName(person.getName());
+        personDTO.setSurname(person.getSurname());
+        personDTO.setDescription(person.getDescription());
+        personDTO.setPhone(person.getPhone());
+        personDTO.setMobile(person.getMobile());
+        personDTO.setEmail(person.getEmail());
+        personDTO.setWallet(person.getWallet());
+        personDTO.setRegDate(person.getRegDate());
+        personDTO.setIdnp(person.getIdnp());
+
+        if(person.getFlat() !=null){
+            final List<Integer> flatId=person.getFlat().stream()
+                    .map(flat -> flat.getFlatid())
+                    .collect(Collectors.toList());
+            personDTO.setFlat(flatId);
+        }
         return personDTO;
+    }
+
+    public List<Integer> getFlat() {
+        return flat;
+    }
+
+    public void setFlat(List<Integer> flat) {
+        this.flat = flat;
     }
 
     public Integer getPersonId() {

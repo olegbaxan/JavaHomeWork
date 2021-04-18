@@ -1,10 +1,8 @@
 package com.step.PersonManagerSpringBackend.model;
 
-
-
 import javax.persistence.*;
 import java.util.List;
-import java.util.Set;
+
 
 @Entity
 public class Flat {
@@ -19,13 +17,13 @@ public class Flat {
     private String buildLadder;
 
     @ManyToMany
-    private List<Person> person;
+    private List<Person> persons ;
     @ManyToOne
     private Address address;
-    @OneToMany
-    private List<Meter> meters;
+//    @OneToMany
+//    private List<Meter> meters;
 
-    public int getFlatid() {
+    public Integer getFlatid() {
         return flatid;
     }
 
@@ -74,11 +72,11 @@ public class Flat {
     }
 
     public List<Person> getPerson() {
-        return person;
+        return persons;
     }
 
-    public void setPerson(List<Person> person) {
-        this.person = person;
+    public void setPerson(List<Person> persons) {
+        this.persons = persons;
     }
 
     public Address getAddress() {
@@ -89,11 +87,11 @@ public class Flat {
         this.address = address;
     }
 
-    public List<Meter> getMeter() {
-        return meters;
-    }
-
-    public void setMeter(List<Meter> meters) {
-        this.meters = meters;
-    }
+//    public List<Meter> getMeter() {
+//        return meters;
+//    }
+//
+//    public void setMeter(List<Meter> meters) {
+//        this.meters = meters;
+//    }
 }

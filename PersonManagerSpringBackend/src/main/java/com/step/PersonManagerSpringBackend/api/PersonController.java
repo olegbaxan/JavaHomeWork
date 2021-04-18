@@ -3,6 +3,7 @@ package com.step.PersonManagerSpringBackend.api;
 
 import com.step.PersonManagerSpringBackend.model.dto.PersonDTO;
 import com.step.PersonManagerSpringBackend.service.PersonService;
+import com.step.PersonManagerSpringBackend.service.exception.FlatNotFoundException;
 import com.step.PersonManagerSpringBackend.service.exception.PersonNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +31,7 @@ public class PersonController {
     public ResponseEntity create(@RequestBody PersonDTO person) {
         try {
             return ResponseEntity.ok(this.personService.save(person));
-        } catch (EntityNotFoundException | PersonNotFoundException ex) {
+        } catch (EntityNotFoundException | PersonNotFoundException | FlatNotFoundException ex) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
         }
     }
